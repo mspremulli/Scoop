@@ -30,4 +30,4 @@ To Access dashboard:
 Dashboard feature:
  - User can add live comments
  - Write in text area and click post to add comment
- - Comment box will add scroll bar when < 2 comments are added
+ - Comment box will add scroll bar when > 2 comments are added
