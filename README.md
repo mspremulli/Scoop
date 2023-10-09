@@ -5,6 +5,6 @@ To Access dashboard:
  - Login password is 123
 
 Dashboard feature:
- - Add comment
- - Write in text area and click post to add comments
+ - User can add live comments
+ - Write in text area and click post to add comment
  - Comment box will add scroll bar when < 2 comments are added
