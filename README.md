@@ -1,9 +1,8 @@
 # sCO2p App
 
 To Access dashboard:
-
-Login username is abc
-Login password is 123
+ - Login username is abc
+ - Login password is 123
 
 Dashboard feature:
  - Add comment
