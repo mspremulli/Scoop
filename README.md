@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # sCO2p App
 
 Please READ:
@@ -31,3 +32,7 @@ Dashboard feature:
  - User can add live comments
  - Write in text area and click post to add comment
  - Comment box will add scroll bar when > 2 comments are added
+ 
+ Dashobard Updates (10/14/2023)
+ - Ride Matcher 
+ - Event Feed
