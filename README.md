@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # sCO2p App
 
 Please READ:
