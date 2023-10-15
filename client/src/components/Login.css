@@ -1,0 +1,184 @@
+/* Login.css */
+
+/* Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f527;
+}
+
+h1 {
+  color: #00ad14;
+}
+
+/* Form and Image Container */
+.form-image-container {
+  display: flex;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 0 auto;
+  /* Center the container horizontally */
+  /* z-index: 4; */
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 10px 60px;
+  width: 600px;
+  height: 600px;
+  border-radius: 15px;
+  /* z-index: 1; */
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  */
+  /* Equal width for both form and image container with a small gap */
+  text-align: center;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* Icon */
+.icon {
+  margin: 0;
+  color: #ccc;
+}
+
+input[type="text"],
+input[type="password"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  /* width: 300px; */
+}
+
+/* Password Toggle */
+.password-toggle {
+  cursor: pointer;
+  color: #ccc;
+}
+
+/* Remember Me */
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+/* Login Button */
+.login-button {
+  background-color: #00ad14;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover {
+  background-color: #009b12;
+}
+
+/* Register Link */
+.register-link {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Add this CSS to your existing styles */
+.image-container {
+  background-image: url('/public/car1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #ffffff;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Align content to the top */
+  align-items: center;
+
+}
+
+.login-image {
+  width: 100%;
+  height: auto;
+  /* Auto height to maintain aspect ratio */
+}
+
+/* Style the welcome text */
+.welcome {
+  color: #00ad14;
+  margin-top: 75%;
+  /* Green color for welcome text *
+  /* Add some margin to the top */
+
+}
+
+.or {
+  margin-bottom: 20px;
+}
+
+/* Social Login Buttons */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  /* Equal width for both form and image container with a small gap */
+}
+
+.social-button {
+  background-color: #fff;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.social-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for social media buttons */
+.social-button.facebook {
+  background-color: #1877f2;
+}
+
+.social-button.google {
+  background-color: #ff0000;
+}
+
+.social-button.x {
+  background-color: #000000;
+}
