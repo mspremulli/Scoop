@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -20,11 +19,5 @@ const HomePage = () => (
   </Container>
 );
 
-function App() {
-  return (
-    <HomePage />
-  );
-}
-
-export default App;
+export default HomePage;
 
