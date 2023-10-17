@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/Homepage';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
+import Profile from './components/Profile';
 import Dashboard from './components/Dashboard'; // Import the Dashboard component
 
 function App() {
@@ -15,12 +16,9 @@ function App() {
       <div className="App">
         {/* Use the Routes component to define your routes */}
         <Routes>
-          {/* Define the login route */}
           <Route path="/" element={<HomePage />} />
-        
           <Route path="/login" element={<Login />} />
-
-          {/* Define the dashboard route */}
+          <Route path="/Profile" element={<Profile />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </div>
