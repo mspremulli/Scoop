@@ -2,76 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import './Dashboard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloud, faUser, faComments, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import { faCloud, faUser, faComments, faThumbsUp, faCalendar } from '@fortawesome/free-solid-svg-icons';
 import EmissionTracker from './EmissionTracker'; // Import your EmissionTracker component
-
-
-function RideMatcher() {
-  // Sample ride matches (replace with actual matching logic)
-  const [rideMatches, setRideMatches] = useState([
-    {
-      id: 1,
-      driverName: 'Driver A',
-      event: 'Event 1',
-      destination: 'Location A1',
-    },
-    {
-      id: 2,
-      driverName: 'Driver B',
-      event: 'Event 2',
-      destination: 'Location B2',
-    },
-  ]);
-
-  useEffect(() => {
-    // Function to update ride data with random rides
-    const updateRideData = () => {
-      const newRideMatches = [...rideMatches];
-      // Generate random ride data (you can replace this logic)
-      const randomDriver = 'Driver ' + String.fromCharCode(65 + Math.floor(Math.random() * 26));
-      const randomEvent = 'Event ' + (Math.floor(Math.random() * 10) + 1);
-      const randomDestination = 'Location ' + String.fromCharCode(65 + Math.floor(Math.random() * 26));
-
-      // Add the new random ride
-      newRideMatches.unshift({
-        id: Date.now(), // Use a unique key (you can use a more robust approach)
-        driverName: randomDriver,
-        event: randomEvent,
-        destination: randomDestination,
-      });
-
-      // Keep a maximum number of rides (e.g., 10)
-      if (newRideMatches.length > 4) {
-        newRideMatches.pop();
-      }
-
-      setRideMatches(newRideMatches);
-    };
-
-    // Update ride data every 5 seconds (adjust the interval as needed)
-    const updateInterval = setInterval(updateRideData, 5000);
-
-    return () => {
-      clearInterval(updateInterval); // Cleanup the interval when the component unmounts
-    };
-  }, [rideMatches]);
-
-  return (
-    <div className="ride-matcher">
-      <div className="ride-matcher-content">
-        {rideMatches.map((match) => (
-          <div key={match.id} className="ride-match">
-            <p>
-              {match.driverName} is going to {match.event} at {match.destination}
-            </p>
-            <button>Request Ride</button>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
+import RideMatcher from './RideMatcher'; // Import your RideMatcher component
 
 function Dashboard() {
   // State for comment input and existing comments
@@ -88,8 +21,6 @@ function Dashboard() {
       setCommentText('');
     }
   };
-
-
 
   // Function to generate random events
   const generateRandomEvents = () => {
@@ -227,25 +158,30 @@ function Dashboard() {
         {/* Event Board Sidebar */}
 
         <div className="event-board-sidebar">
+
           <h2>Ride Matcher</h2>
           {/* Include the RideMatcher component here */}
           <RideMatcher />
           {/* Rest of your Dashboard component */}
-
-          <h2>Event Schedule</h2>
+          <hr></hr>
+          <h2 className="event-schedule-header">Event Schedule</h2>
           {/* Individual Event */}
-          <div className="event">
+          <div className='event-container'>
             {events.map((event) => (
-              <div className="event-content" key={event.id}>
-                <div className="event-time">{event.time}</div>
-                <div className="event-details">
-                  <h3>{event.title}</h3>
-                  <p>{event.description}</p>
+              <div className="event" key={event.id}>
+                <div className="event-content">
+                  <FontAwesomeIcon className="calendar-icon" icon={faCalendar} style={{ fontSize: '2rem', color: 'grey' }} />
+                  <div className="event-time">{event.time}</div>
+                  <div className="event-details">
+                    <h3>{event.title}</h3>
+                    <p>{event.description}</p>
+                  </div>
+                  <button>Schedule Event</button>
                 </div>
-                <button>Schedule Event</button>
               </div>
             ))}
           </div>
+
           {/* Add more events here */}
         </div>
       </div>

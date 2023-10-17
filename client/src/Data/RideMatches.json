@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "driverName": "Driver A",
+    "event": "Event 1",
+    "destination": "Location A1"
+  },
+  {
+    "id": 2,
+    "driverName": "Driver B",
+    "event": "Event 2",
+    "destination": "Location B2"
+  }
+]
