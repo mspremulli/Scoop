@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
-
-
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [username, setUsername] = useState('');
@@ -73,12 +71,7 @@ function Login() {
             </button>
           </div>
         </form>
-        <div className="image-container">
-          <div className="welcome">
-            <h2>Welcome to Our App</h2>
-            <p>Explore our features and start carpooling today!</p>
-          </div>
-        </div>
+        
       </div>
 
       <p className="register-link">
