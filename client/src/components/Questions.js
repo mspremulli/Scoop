@@ -3,12 +3,26 @@ import './Questions.css';
 import { Link } from 'react-router-dom';
 
 const Questions = () => {
-  const [answers, setAnswers] = useState(Array(30).fill(''));
+  const savedAnswers = JSON.parse(localStorage.getItem('answers')) || Array(30).fill('');
+  const [answers, setAnswers] = useState(savedAnswers);
+  const [editing, setEditing] = useState(false);
+  const [changesSaved, setChangesSaved] = useState(false);
 
   const handleInputChange = (index, answer) => {
     const updatedAnswers = [...answers];
     updatedAnswers[index] = answer;
     setAnswers(updatedAnswers);
+    if (changesSaved) {
+      setChangesSaved(false); // Reset the changes saved message
+    }
+  };
+
+  const handleEdit = () => {
+    if (editing) {
+      localStorage.setItem('answers', JSON.stringify(answers));
+      setChangesSaved(true);
+    }
+    setEditing(!editing);
   };
 
   const questions = [
@@ -43,39 +57,51 @@ const Questions = () => {
     "What's your favorite podcast?",
     "Have you ever had a side hustle or considered having one?",
     "Are you into after-work happy hours?"
-];
+  ];
 
-  // Function to handle the form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle the submission of answers here
-    console.log(answers);
-  };
-
-return (
+  return (
     <div className="questions-container">
-        <h1>Edit Profile</h1>
-      <form onSubmit={handleSubmit}>
+      <h1>Edit Profile</h1>
+      <form>
         {questions.map((question, index) => (
           <div key={index} className="question">
             <label>{question}</label>
-            <input
-              type="text"
-              value={answers[index]}
-              onChange={(e) => handleInputChange(index, e.target.value)}
-            />
+            {editing ? (
+              <input
+                type="text"
+                value={answers[index]}
+                onChange={(e) => handleInputChange(index, e.target.value)}
+              />
+            ) : answers[index] ? (
+              <div className="saved-answer">
+                <strong>Your Answer:</strong>
+                <span>{answers[index]}</span>
+              </div>
+            ) : (
+              <input
+                type="text"
+                value={answers[index]}
+                onChange={(e) => handleInputChange(index, e.target.value)}
+              />
+            )}
           </div>
         ))}
-        <Link to="/profile"> {/* Use Link to navigate to Profile */}
-          <button type="submit" className="submit-button">Save Changes</button>
-        </Link>
+        <div className="buttons-container">
+          <button
+            type="button"
+            onClick={handleEdit}
+            className="edit-button"
+          >
+            {editing ? "Save Changes" : "Edit"}
+          </button>
+          <Link to="/profile">
+            <button className="submit-button">Back</button>
+          </Link>
+          {changesSaved && <p className="changes-saved-message">Changes have been saved.</p>}
+        </div>
       </form>
     </div>
   );
-}
+};
 
 export default Questions;
-
-
-
-
