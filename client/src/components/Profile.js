@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Questions from './Questions'
 
 const ProfileContainer = styled.div`
   text-align: center;
@@ -40,11 +42,28 @@ const InfoItem = styled.div`
   margin: 0 10px;
 `;
 
+const EditProfileButton = styled(Link)`
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
 function Profile() {
   return (
     <ProfileContainer>
       <ProfileImage
-        src="https://placekitten.com/150/150" // Replace with your profile image URL
+        src="https://placekitten.com/150/150"
         alt="Profile Image"
       />
       <ProfileName>Your Name</ProfileName>
@@ -63,7 +82,7 @@ function Profile() {
           <strong>Posts</strong> <br /> 200
         </InfoItem>
       </ProfileInfo>
-      <button>Edit Profile</button>
+      <EditProfileButton to="/questions">Edit Profile</EditProfileButton>
     </ProfileContainer>
   );
 }
