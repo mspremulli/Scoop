@@ -27,16 +27,7 @@ function EmissionsTracker() {
 
   return (
     <div>
-      <h2>Emissions Tracker</h2>
-      <div>
-        <input
-          type="text"
-          placeholder="Enter an emission"
-          value={newEmission}
-          onChange={(e) => setNewEmission(e.target.value)}
-        />
-        <button onClick={addEmission}>Add Emission</button>
-      </div>
+      <h2>Ride & Event Activity Pulse</h2>
       <ul>
         {emissions.map((emission) => (
           <li key={emission.id}>{emission.sourceName}</li>
