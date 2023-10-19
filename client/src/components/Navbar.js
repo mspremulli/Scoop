@@ -5,6 +5,7 @@ import logo from '../Data/icon.svg';
 
 const Brand = styled.div`
   width: 100px;
+  max-width: 1000px;
   height: 50px;
   font-family: 'Varela Round', sans-serif;
   align-items: center; /* Vertically center content */
@@ -30,6 +31,7 @@ const NavLink = styled(Link)`
   color: #00ad14;
   text-decoration: none;
   margin: 0 10px 0;
+  max-width: 1000px;
   font-size: 1rem;
   font-weight: 600;
   line-height: 40px;

@@ -19,8 +19,8 @@ body {
   justify-content: center;
   height: 80vh;
   background-color: #f5f5f527;
-  margin-top: 10vh;
-  margin-right: 35vw;
+  margin-top: 11vh;
+  margin-left: 10vw;
   font-family: 'Varela Round';
   border-radius: 15px;
 }
@@ -43,7 +43,7 @@ h1 {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  background: linear-gradient(to bottom, #003c44, transparent);
+  background: linear-gradient(to bottom, #001F23, transparent);
   padding: 10px 60px;
   width: 50vh;
   height: 45vh;
@@ -89,9 +89,12 @@ input[type="password"] {
 .remember-me {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-top: 10px; /* Adjust margin for spacing */
   font-size: 12px;
+  margin-right: auto; /* Move the items to the right */
+
 }
+
 
 /* Login Button */
 .login-button {
