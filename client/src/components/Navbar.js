@@ -14,15 +14,15 @@ const NavBar = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-  color: black;
+  color: #00FF85;
   text-decoration: none;
   margin: 0 8px 0;
   font-size: 1rem;
   font-weight: 700;
-  border: solid 7px #00FF85;
-  border-radius: 10px;
-  background-color: #00FF85;
- 
+  border: solid 8px #006240;
+  border-radius: 12px;
+  background-color: #006240;
+
   &:hover {
     text-decoration: underline;
   }
