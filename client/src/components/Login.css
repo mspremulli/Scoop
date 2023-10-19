@@ -1,7 +1,14 @@
 /* Login.css */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
 body {
   background-color: #001F23;
+  background-image: url("../Data/logo.svg");
+  background-position: calc(100% - -150px) top; /* Push it 50px from the right edge */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: overlay;
+  width: 90vw;
 }
 
 /* Container */
@@ -12,17 +19,19 @@ body {
   justify-content: center;
   height: 80vh;
   background-color: #f5f5f527;
-  margin-bottom: 2vh;
+  margin-top: 10vh;
+  margin-right: 35vw;
+  font-family: 'Varela Round';
+  border-radius: 15px;
 }
 
 h1 {
-  color: #00ad14;
+  color: #00FF85;
 }
 
 /* Form and Image Container */
 .form-image-container {
   display: flex;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin: 0 auto;
   /* Center the container horizontally */
@@ -34,9 +43,9 @@ h1 {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  background-color: #003c44;
+  background: linear-gradient(to bottom, #003c44, transparent);
   padding: 10px 60px;
-  width: 60vh;
+  width: 50vh;
   height: 45vh;
   border-radius: 15px;
   /* z-index: 1; */
@@ -98,7 +107,7 @@ input[type="password"] {
 }
 
 .login-button:hover {
-  background-color: #009b12;
+  background-color: #00FF85;
 }
 
 /* Register Link */
@@ -140,7 +149,7 @@ input[type="password"] {
 
 /* Style the welcome text */
 .welcome {
-  color: #00ad14;
+  color: #00FF85;
   margin-top: 75%;
   /* Green color for welcome text *
   /* Add some margin to the top */
