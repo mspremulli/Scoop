@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Brand = styled.div`
-
   width: 100px;
   height: 100px;
 `;
@@ -12,8 +11,6 @@ const NavBar = styled.nav`
   background-color: #00000000;
   display: flex;
   justify-content: space-between;
-  padding: 0px;
-  border-radius: 10px;
 
   position: sticky;
   top: 20px;
@@ -25,7 +22,8 @@ const NavLink = styled(Link)`
   margin: 0 10px 0 ;
   font-size: 1.15rem;
   font-weight: 600;
-  
+ line-height: 40px;
+ 
   &:hover {
     text-decoration: underline;
   }
