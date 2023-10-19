@@ -13,7 +13,7 @@ const Brand = styled.div`
 `;
 
 const NavBar = styled.nav`
-  background-color: #00181c;
+  background-color: rgba(0, 24, 28, 0.8); /* Use rgba to add opacity */
   display: flex;
   justify-content: space-between;
   position: fixed; /* Make the Navbar fixed */
