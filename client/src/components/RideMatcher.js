@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Dashboard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloud, faUser, faCalendar, faMapPin } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faCalendar, faMapPin } from '@fortawesome/free-solid-svg-icons';
 
 function RideMatcher() {
   const [rideMatches, setRideMatches] = useState([
