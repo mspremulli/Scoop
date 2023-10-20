@@ -1,0 +1,13 @@
+/* Center Alignment */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #0B191B;
+}
+#element {
+  width: 100%; 
+  height: 100vh;
+}
