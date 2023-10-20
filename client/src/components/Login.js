@@ -31,38 +31,38 @@ function Login() {
           <h1>Login</h1>
           <div className="input-container">
             <FontAwesomeIcon icon={faUser} className="icon" />
+            <div className="username-input">
             <input
               type="text"
               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
+            </div>
           </div>
           <div className="input-container">
             <FontAwesomeIcon icon={faLock} className="icon" />
-            <input
-              type={showPassword ? 'text' : 'password'}
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            {showPassword ? (
+            <div className="password-input">
+              <input
+                type={showPassword ? 'text' : 'password'}
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
               <span className="password-toggle" onClick={handleShowPasswordToggle}>
-                <FontAwesomeIcon icon={faEyeSlash} />
+                <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
               </span>
-            ) : (
-              <span className="password-toggle" onClick={handleShowPasswordToggle}>
-                <FontAwesomeIcon icon={faEye} />
-              </span>
-            )}
+            </div>
           </div>
           <div className="remember-me">
+            <div className="checkbox-container">
             <input
               type="checkbox"
               id="rememberMe"
               checked={rememberMe}
               onChange={() => setRememberMe(!rememberMe)}
             />
+          </div>
             <label htmlFor="rememberMe">Remember Me</label>
           </div>
           <div className="login-controls">
@@ -78,7 +78,8 @@ function Login() {
         Don't have an account? <a href="/register">Register</a>
       </p>
       <div className="or">
-        <span className="or-text">- or -</span>
+        <div className="divider"></div>&nbsp; or &nbsp;<div className="divider"></div>
+        
       </div>
       <div className="social-login">
         <button className="social-button facebook">Sign in with Facebook</button>

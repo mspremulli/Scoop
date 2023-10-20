@@ -19,10 +19,8 @@ const NavBar = styled.nav`
   position: fixed; /* Make the Navbar fixed */
   align-items: center; /* Vertically center content */
   top: 0; /* Position it at the top */
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  left: 0; /* Align it to the left */
   width: 100%; /* Span the entire width */
-  left: 0; right: 0;
   z-index: 1000; /* Set a high z-index to ensure it's on top of other content */
   border-bottom: 2px solid #193538; /* Add a colored border at the bottom */
   box-shadow: 0 0 10px rgba(25, 53, 56, 0.4); /* Add a subtle box-shadow for the glow effect */
@@ -30,13 +28,16 @@ const NavBar = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-  color: #00FF85;
+  color: #00ad14;
   text-decoration: none;
-  padding-right: 20px;
+  margin: 0 10px 0;
+  max-width: 1000px;
   font-size: 1rem;
+  font-family: 'Varela Round';
   font-weight: 600;
   line-height: 40px;
   transition: color 0.3s, transform 0.5s; /* Add transitions for color and transform */
+
   &:hover {
     color: #00FF85; /* Change color on hover */
     transform: translateX(-5px); /* Apply a horizontal translation on hover */
@@ -52,7 +53,7 @@ function Navbar() {
       </Brand>
       <div>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/dashboard">Map</NavLink>
+        <NavLink to="/dashboard">Heat Map</NavLink>
         <NavLink to="/profile">Profile</NavLink>
         <NavLink to="/login">Login</NavLink>
       </div>

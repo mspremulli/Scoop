@@ -1,0 +1,85 @@
+.questions-container {
+  width: 50vw;
+  max-width: 50vw;
+  height: 79vh;
+  max-height: 79vh;
+  overflow-y: auto;
+  margin: 20px auto; /* Add margin to the top and bottom */
+  font-family: 'Varela Round';
+  padding: 20px;
+  background: linear-gradient(to bottom, #001F23, transparent);
+  border-radius: 15px;
+  color: #fff;
+  background-color: rgba(204, 204, 204, 0.2);
+  margin-top: 12vh;
+  margin-left: 10vw;
+}
+
+.question {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #ccc;
+  margin-top: 30px ;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #00ad14;
+}
+
+input {
+  max-width: 46vw; /* Adjust the max-width as needed */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 5px;
+  word-wrap: break-word;
+  background-color: #ccc;
+  color: #001F23;
+}
+
+input:focus {
+  background-color: #eaeaea;
+}
+
+.buttons-container {
+  text-align: center; /* Center align the buttons */
+}
+
+.submit-button,
+.edit-button,
+.message {
+  margin: 5px; /* Add spacing between buttons */
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.submit-button {
+  background-color: #00ad14;
+}
+
+.submit-button:hover {
+  background-color: #00FF85;
+}
+
+.edit-button {
+  background-color: #00ad14;
+}
+
+.edit-button:hover {
+  background-color: #00FF85;
+}
+
+.message {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
