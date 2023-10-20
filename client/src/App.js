@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Dashboard from './components/Dashboard'; // Import the Dashboard component
 import Questions from './components/Questions';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Profile" element={<Profile />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/questions" element={<Questions /> } />
+          <Route path="/aboutus" element={<AboutUs /> } />
         </Routes>
       </div>
     </Router>
