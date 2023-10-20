@@ -1,12 +1,15 @@
-/* Center Alignment */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin: 0;
-  background-color: #001F23;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding-top: 100px;
 }
-p {
-padding: 10px;
+
+.left {
+  padding: 0px;
 }
+
+.right {
+  padding: 0px;
+}
+
