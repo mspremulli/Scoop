@@ -263,7 +263,7 @@ width: 100%;
 .event-board-sidebar {
   flex: 1;
   width: 300px;
-  background-color: #fff;
+  background-color: #e0fff2;;
   border-radius: 10px;
   padding: 10px;
   margin-left: 20px;
@@ -294,7 +294,7 @@ width: 100%;
 .ride-matcher {
   flex: 1;
   max-width: 300px;
-  background-color: #ffffff;
+  
   border-radius: 10px;
   padding: 0 10px 10px 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
