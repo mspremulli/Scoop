@@ -1,8 +1,9 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  padding-top: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 1000px;
 }
 
 .left {
@@ -15,4 +16,8 @@
 
 body{
   background-color: #001F23;
+}
+
+.welcome{
+  height: 130px;
 }
