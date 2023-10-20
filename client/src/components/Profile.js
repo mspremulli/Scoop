@@ -11,7 +11,7 @@ const ProfileContainer = styled.div`
   min-width: 40vw;
   height: 79vh;
   max-height: 79vh;
-  margin-top: 9vh;
+  margin-top: 1vh;
   margin-left: 10vw;
   border-radius: 15px;
   background: linear-gradient(to bottom, #001F23, transparent);
