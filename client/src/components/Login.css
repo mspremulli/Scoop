@@ -206,29 +206,49 @@ input[type="password"] {
 }
 
 .social-button {
-  background-color: #fff;
-  color: #fff;
+  background-color: #fff; /* Original background color */
+  color: #fff; /* Text color */
   border: 1px solid #001F23;
   border-radius: 4px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s; /* Add background color transition */
 }
 
 .social-button:hover {
-  background-color: #0056b3;
+  background-color: #f3f3f3; /* Lighter background color on hover */
+  color: #fff; /* Original text color */
 }
+
 
 /* Styling for social media buttons */
 .social-button.facebook {
   background-color: #1877f2;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.social-button.facebook:hover {
+  background-color: #181cf2; /* Adjust to the desired brighter color */
 }
 
 .social-button.google {
   background-color: #ff0000;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.social-button.google:hover {
+  background-color: #b50707; /* Adjust to the desired brighter color */
 }
 
 .social-button.x {
   background-color: #000000;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.social-button.x:hover {
+  background-color: #333333; /* Adjust to the desired brighter color */
 }
