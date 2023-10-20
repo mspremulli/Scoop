@@ -5,9 +5,10 @@ class ChatBot extends React.Component {
     return (
       <div>
         <iframe
-          title="Internal HTML File"
+          title="Watson AI Chat Bot"
           src="/chat_bot.html"
-          width="100%"
+          width="500px"
+          height="500px"
           sandbox="allow-scripts allow-same-origin"
         />
       </div>
