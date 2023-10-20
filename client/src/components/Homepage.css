@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 1000px;
+}
+
+.left {
+  padding: 0px;
+}
+
+.right {
+  padding: 0px;
+}
+
+body{
+  background-color: #001F23;
+}
+
+.welcome{
+  height: 130px;
+}

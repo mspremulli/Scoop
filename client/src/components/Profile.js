@@ -88,17 +88,17 @@ function Profile() {
       <ProfileName>Your Name</ProfileName>
       <ProfileUsername>@yourusername</ProfileUsername>
       <ProfileBio>
-        Web Developer | React Enthusiast | Coffee Lover
+        Web Developer | Sports Fan | Coffee Lover
       </ProfileBio>
       <ProfileInfo>
         <InfoItem>
-          <strong>Followers</strong> <br /> 1000
+          <strong>Friends</strong> <br /> 115
         </InfoItem>
         <InfoItem>
-          <strong>Following</strong> <br /> 500
+          <strong>Past Events</strong> <br /> 23
         </InfoItem>
         <InfoItem>
-          <strong>Posts</strong> <br /> 200
+          <strong>News Posts</strong> <br /> 220
         </InfoItem>
       </ProfileInfo>
       <EditProfileButton to="/questions">View Full Profile</EditProfileButton>

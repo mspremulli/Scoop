@@ -94,8 +94,10 @@ function Dashboard() {
           {/* Status Update */}
           <div className="status-update">
             {/* Map */}
+           
             <div className="map">
               {/* Add your map component here */}
+              <div className = "corner">
               <iframe
                 src="https://8jc7g5-5173.csb.app"
                 width="100%"
@@ -104,6 +106,7 @@ function Dashboard() {
                 allowFullScreen=""
                 loading="lazy"
               ></iframe>
+            </div>
             </div>
             {/* Status Update */}
             <div className="status-update-content">

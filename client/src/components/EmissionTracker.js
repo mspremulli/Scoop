@@ -27,7 +27,7 @@ function EmissionsTracker() {
 
   return (
     <div>
-      <h2>Ride & Event Activity Pulse</h2>
+      <h2>Ride and Event Activity Pulse</h2>
       <ul>
         {emissions.map((emission) => (
           <li key={emission.id}>{emission.sourceName}</li>

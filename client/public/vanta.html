@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.dots.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="element"></div>
+
+    <script>
+      VANTA.DOTS({
+        el: "#element",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight:600.0,
+        minWidth: 900.0,
+        scale: 1,
+        scaleMobile: 1.0,
+        color: 0xff86,
+        color2: 0xff86,
+        backgroundColor: 0x7191b
+      });
+    </script>
+  </body>
+</html>
