@@ -5,7 +5,13 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 0px;
+}
+
+.about-us-text {
+  color: white;
+  font-size: large;
+  text-align: center;
 }
 
 .cloud-icon {
