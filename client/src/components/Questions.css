@@ -1,16 +1,17 @@
 .questions-container {
   width: 50vw;
-  height: 81vh;
+  max-width: 50vw;
+  height: 79vh;
+  max-height: 79vh;
   overflow-y: auto;
   margin: 20px auto; /* Add margin to the top and bottom */
   font-family: 'Varela Round';
   padding: 20px;
   background: linear-gradient(to bottom, #001F23, transparent);
   border-radius: 15px;
-  border-bottom: 2px solid #00ad14;
   color: #fff;
   background-color: rgba(204, 204, 204, 0.2);
-  margin-top: 11vh;
+  margin-top: 12vh;
   margin-left: 10vw;
 }
 

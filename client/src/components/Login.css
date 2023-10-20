@@ -90,7 +90,6 @@ input[type="password"] {
   margin-left: -30px; /* Adjust the margin to position the toggle icon properly */
 }
 
-
 /* Remember Me */
 .remember-me {
   display: flex;
@@ -162,7 +161,6 @@ input[type="password"] {
   justify-content: flex-start;
   /* Align content to the top */
   align-items: center;
-
 }
 
 .login-image {
@@ -230,7 +228,7 @@ input[type="password"] {
 }
 
 .social-button.facebook:hover {
-  background-color: #181cf2; /* Adjust to the desired brighter color */
+  background-color: #181cf2;
 }
 
 .social-button.google {
@@ -240,7 +238,7 @@ input[type="password"] {
 }
 
 .social-button.google:hover {
-  background-color: #b50707; /* Adjust to the desired brighter color */
+  background-color: #b50707;
 }
 
 .social-button.x {
@@ -250,5 +248,5 @@ input[type="password"] {
 }
 
 .social-button.x:hover {
-  background-color: #333333; /* Adjust to the desired brighter color */
+  background-color: #333333;
 }

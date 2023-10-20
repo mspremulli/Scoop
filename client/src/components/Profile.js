@@ -6,14 +6,28 @@ const ProfileContainer = styled.div`
   text-align: center;
   font-family: 'Varela Round';
   padding: 20px;
+  width: 50vw;
+  max-width: 50vw;
+  min-width: 40vw;
+  height: 79vh;
+  max-height: 79vh;
+  margin-top: 9vh;
+  margin-left: 10vw;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #001F23, transparent);
+  background-color: rgba(204, 204, 204, 0.2);
 `;
+
 
 const ProfileImage = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  margin-top: 40px;
   margin-bottom: 20px;
+  border: 3px solid #001F23;
+  box-shadow: 0 0 20px #00FF85;
 `;
 
 const ProfileName = styled.h1`
@@ -30,12 +44,16 @@ const ProfileUsername = styled.h3`
 
 const ProfileBio = styled.p`
   font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 40px;
 `;
 
 const ProfileInfo = styled.div`
   display: flex;
   justify-content: center;
   margin: 20px 0;
+  margin-top: 20px;
+  color: #ccc;
 `;
 
 const InfoItem = styled.div`
@@ -48,6 +66,7 @@ const EditProfileButton = styled(Link)`
   background-color: #00ad14;
   color: #fff;
   text-decoration: none;
+  margin-top: 25px;
   border: 1px solid #001F23;
   border-radius: 4px;
   cursor: pointer;
@@ -82,7 +101,7 @@ function Profile() {
           <strong>Posts</strong> <br /> 200
         </InfoItem>
       </ProfileInfo>
-      <EditProfileButton to="/questions">Edit Profile</EditProfileButton>
+      <EditProfileButton to="/questions">View Full Profile</EditProfileButton>
     </ProfileContainer>
   );
 }
