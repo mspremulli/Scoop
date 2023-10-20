@@ -26,7 +26,7 @@ function EmissionsTracker() {
   };
 
   return (
-    <div>
+    <div class="heatmap">
       <h2>Ride and Event Activity Pulse</h2>
       <ul>
         {emissions.map((emission) => (
