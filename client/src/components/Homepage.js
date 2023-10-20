@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ChatBot from './ChatBot';
 
 const Container = styled.div`
   text-align: center;
@@ -16,6 +17,7 @@ const HomePage = () => (
       </div>
     </div>
     </header>
+    <ChatBot />
   </Container>
 );
 
