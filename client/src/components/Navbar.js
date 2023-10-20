@@ -33,6 +33,7 @@ const NavLink = styled(Link)`
   margin: 0 10px 0;
   max-width: 1000px;
   font-size: 1rem;
+  font-family: 'Varela Round';
   font-weight: 600;
   line-height: 40px;
   transition: color 0.3s, transform 0.5s; /* Add transitions for color and transform */

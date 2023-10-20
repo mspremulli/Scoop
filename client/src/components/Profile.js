@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Questions from './Questions'
 
 const ProfileContainer = styled.div`
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Varela Round';
   padding: 20px;
 `;
 
@@ -20,11 +19,12 @@ const ProfileImage = styled.img`
 const ProfileName = styled.h1`
   font-size: 2rem;
   margin: 10px 0;
+  color: #00FF85;
 `;
 
 const ProfileUsername = styled.h3`
   font-size: 1.5rem;
-  color: #777;
+  color: #ccc;
   margin: 10px 0;
 `;
 
@@ -45,17 +45,17 @@ const InfoItem = styled.div`
 const EditProfileButton = styled(Link)`
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #00ad14;
   color: #fff;
   text-decoration: none;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid #001F23;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #00FF85;
   }
 `;
 

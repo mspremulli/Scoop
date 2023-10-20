@@ -74,7 +74,7 @@ const Questions = () => {
               />
             ) : answers[index] ? (
               <div className="saved-answer">
-                <strong>Your Answer:</strong>
+                <strong>Your Answer:  </strong>
                 <span>{answers[index]}</span>
               </div>
             ) : (
