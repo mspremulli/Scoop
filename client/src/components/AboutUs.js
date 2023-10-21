@@ -28,10 +28,11 @@ const logoStyle = {
 };
 
 const subStyle = {
-  fontSize: '0.5rem',
+  fontSize: '1rem',
   verticalAlign: 'super',
   margin: '0 2px',
 };
+
 
 const AboutUs = () => {
   return (
