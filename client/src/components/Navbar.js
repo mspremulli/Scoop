@@ -53,6 +53,7 @@ function Navbar() {
       </Brand>
       <div>
         <NavLink to="/">Home</NavLink>
+        <NavLink to="/aboutus">About Us</NavLink>
         <NavLink to="/dashboard">Heat Map</NavLink>
         <NavLink to="/profile">Profile</NavLink>
         <NavLink to="/login">Login</NavLink>

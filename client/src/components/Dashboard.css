@@ -5,7 +5,13 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 0px;
+}
+
+.about-us-text {
+  color: white;
+  font-size: large;
+  text-align: center;
 }
 
 .cloud-icon {
@@ -26,6 +32,7 @@ body {
   font-family: 'Varela Round';
   max-width: 100%;
   padding-top: 240px;
+  margin-bottom: 8vh;
   /* Adjust the maximum width to take up the available space */
 }
 
