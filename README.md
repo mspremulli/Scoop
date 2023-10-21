@@ -20,11 +20,7 @@ Scoop is not just another ride-sharing app; it's a transformative platform that 
 
 ### IBM AI Service(s) Used
 
-- [IBM Natural Language Understanding](https://cloud.ibm.com/catalog/services/natural-language-understanding) - Used for analyzing user preferences and event descriptions.
 - [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant) - Powers the chatbot feature for user interactions.
-- [Watson Discovery](https://cloud.ibm.com/catalog/services/watson-discovery) - Enables efficient content searching and recommendation.
-- [Watson Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) - Converts audio interactions to text for analysis.
-- [Watson Text to Speech](https://cloud.ibm.com/catalog/services/text-to-speech) - Provides voice interactions and notifications.
 
 ### Other IBM Technology Used
 
