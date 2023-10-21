@@ -57,7 +57,7 @@ Our solution also incorporates other IBM technologies such as [IBM Cloud Object 
 
 ### Solution Demo Video
 
-[![Watch the Scoop App Demo](https://example.com/scoop-demo-video-thumbnail.png)](https://example.com/scoop-demo-video)
+[![Watch the Scoop App Demo](https://github.com/mspremulli/Scoop/blob/main/client/src/Data/icon.svg)](https://www.youtube.com/watch?v=O_KplrmN2HU)
 
 ### Project Development Roadmap
 
@@ -91,7 +91,7 @@ To run the Scoop app locally for development and testing:
 
 ### Live Demo
 
-You can access a live demo of the Scoop app at [example.com/scoop-demo](https://github.com/mspremulli/Scoop). Use the following credentials to log in:
+You can access a live demo of the Scoop app at [(https://github.com/mspremulli/Scoop)](https://github.com/mspremulli/Scoop). Use the following credentials to log in:
 
 - Username: abc
 - Password: 123
