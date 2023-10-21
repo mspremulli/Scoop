@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-blend-mode: overlay;
+  background-attachment: fixed; /* Add this line */
   width: 90vw;
 }
 
