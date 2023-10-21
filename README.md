@@ -1,6 +1,6 @@
 # PVD TEAM 3
 
-# Scoop: Ride Share to <b>S</b>top <b>CO</b>2 <b>P</b>ollution
+# Scoop: Ride Share to Stop CO2 Pollution
 
 ## Project Summary
 
