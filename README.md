@@ -28,8 +28,6 @@ Our solution also incorporates other IBM technologies such as [IBM Cloud Object 
 
 ### Solution Architecture
 
-![Scoop Architecture](https://example.com/scoop-architecture.png)
-
 1. Users interact with Scoop through a user-friendly interface.
 2. IBM Watson services, including Natural Language Understanding and Watson Assistant, process user requests, preferences, and event descriptions.
 3. The app recommends events to users based on their preferences and location.
