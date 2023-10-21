@@ -25,6 +25,8 @@ const logoStyle = {
   color: '#fff',
   padding: '10px 20px',
   borderRadius: '5px',
+  marginTop: '7vh',
+  marginBottom: '1vh',
 };
 
 const subStyle = {

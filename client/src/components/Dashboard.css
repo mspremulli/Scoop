@@ -25,17 +25,14 @@ body {
   visibility: hidden;  /* optional since kenny's cloud? */
 }
 
-
 /* Dashboard Container */
 .dashboard-container {
   display: flex;
   font-family: 'Varela Round';
   max-width: 100%;
   padding-top: 240px;
-  margin-bottom: 15vh;
-  /* Adjust the maximum width to take up the available space */
+  margin-bottom: 5vh;
 }
-
 
 .content-wrapper {
   display: flex;

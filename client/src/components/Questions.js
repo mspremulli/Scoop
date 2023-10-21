@@ -63,29 +63,24 @@ const Questions = () => {
     <div className="questions-container">
       <h1>Edit Profile</h1>
       <form>
-        {questions.map((question, index) => (
-          <div key={index} className="question">
-            <label>{question}</label>
-            {editing ? (
-              <input
-                type="text"
-                value={answers[index]}
-                onChange={(e) => handleInputChange(index, e.target.value)}
-              />
-            ) : answers[index] ? (
-              <div className="saved-answer">
-                <strong>Your Answer:  </strong>
-                <span>{answers[index]}</span>
-              </div>
-            ) : (
-              <input
-                type="text"
-                value={answers[index]}
-                onChange={(e) => handleInputChange(index, e.target.value)}
-              />
-            )}
+          {questions.map((question, index) => (
+      <div key={index} className="question">
+        <label>{question}</label>
+        {editing ? (
+          <input
+            type="text"
+            value={answers[index]}
+            onChange={(e) => handleInputChange(index, e.target.value)}
+          />
+        ) : answers[index] ? (
+          <div className="saved-answer">
+            <strong>Your Answer:  </strong>
+            <span>{answers[index]}</span>
           </div>
-        ))}
+        ) : null} {/* Input not rendered when not in editing mode */}
+      </div>
+      ))}
+
         <div className="buttons-container">
           <button
             type="button"
