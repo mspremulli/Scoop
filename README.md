@@ -1,6 +1,6 @@
 # PVD TEAM 3
 
-# Scoop: Ride Share to Stop CO2 Pollution
+# Scoop: Ride Share to <b>S</b>top <b>CO</b>2 <b>P</b>ollution
 
 ## Project Summary
 
@@ -115,7 +115,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 - [Christian Alcantara](https://github.com/chrsalctra) - Initial work
 - [Akinola Daramola](https://github.com/Nola360) - Initial work
 - [Kenney Kong](https://github.com/KenneyKong) - Initial work
-- [stephen Kovolski](https://github.com/stephen-kovolski) - Initial work
+- [Stephen Kovolski](https://github.com/stephen-kovolski) - Initial work
 - [Michael Spremulli](https://github.com/mspremulli) - Initial work
 
 ### License
