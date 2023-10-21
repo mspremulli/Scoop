@@ -1,6 +1,6 @@
 # PVD TEAM 3
 
-# Scoop: The Ride-Share Solution for a Cleaner World – Stop CO2 Pollution Today
+# Scoop: Stop CO2 Pollution, One Shared Ride at a Time
 
 ## Project Summary
 
